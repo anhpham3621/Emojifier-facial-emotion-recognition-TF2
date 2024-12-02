@@ -1,4 +1,5 @@
-Forked from git@github.com:vijuSR/facial_emotion_recognition__EMOJIFIER.git
+Forked from 
+https://github.com/vijuSR/facial_emotion_recognition__EMOJIFIER
 
 Note: 
 
