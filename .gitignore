@@ -1,0 +1,7 @@
+images/*
+# Ignore Python bytecode files
+__pycache__/
+*.pyc
+
+# Ignore virtual environment
+venv/
