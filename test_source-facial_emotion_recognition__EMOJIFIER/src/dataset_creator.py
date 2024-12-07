@@ -49,7 +49,8 @@ def image_label_generator(emotion_map):
         image_lists.append(image_list)
         labels.extend([v]*len(image_list))
         
-    images = np.vstack((image_reader(image_list) for image_list in image_lists))
+    #images = np.vstack((image_reader(image_list) for image_list in image_lists))
+    images = np.vstack([image_reader(image_list) for image_list in image_lists])
 
     return images, labels
 
@@ -70,14 +71,20 @@ def train_test_splitter(images, labels):
     logger.debug('Trainset size: {}, Testset size: {}'.format(
         len(trainset), len(testset)
     ))
+
+    print("debugging:")
+    print(type(trainset), len(trainset))
+    print(type(trainset[0]), type(trainset[0][0]))
     
     logger.debug('concatinating the train images on axis 0')
-    train_image = np.vstack((tr[0] for tr in tqdm.tqdm(trainset[:])))
+    train_image = np.vstack([tr[0] for tr in tqdm.tqdm(trainset[:])])
+    #train_image = np.vstack((tr[0] for tr in tqdm.tqdm(trainset[:])))
     logger.debug('concatinating the train labels on axis 0')
     train_label = [tr[1] for tr in tqdm.tqdm(trainset[:])]
 
     logger.info('concatinating the test images on axis 0')
-    test_image = np.vstack((te[0] for te in tqdm.tqdm(testset[:])))
+    #test_image = np.vstack((te[0] for te in tqdm.tqdm(testset[:])))
+    test_image = np.vstack([te[0] for te in tqdm.tqdm(testset[:])])
     logger.debug('concatinating the test labels on axis 0')
     test_label = [te[1] for te in tqdm.tqdm(testset[:])]
     

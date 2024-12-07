@@ -65,7 +65,7 @@ def from_cam(model):
             p, confidence = inference(model, face_img_gray)
             logger.critical('model inference time: {}'.format(time.time() - s))
 
-            if confidence > 0.5:
+            if confidence > 0.3:
                 img2 = emoji_to_pic[index_emo[p]]
                 img2 = cv2.resize(img2, (w, h))
 
