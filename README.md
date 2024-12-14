@@ -9,8 +9,10 @@ python 3.9 or 3.10 should work
 
 virtual environment recommended for your local machine 
 
-
 Key Features of haarcascade_frontalface_default.xml:
 Purpose: It helps identify regions in an image that likely contain a human face.
 Implementation: The model uses Haar-like features, which are pre-defined patterns of intensity (light and dark regions), combined with machine learning for classification.
 Training: The classifier is trained using thousands of positive and negative images to detect faces effectively.
+
+Link to working Google Drive: 
+https://drive.google.com/drive/folders/1alpsE57XJWarzPfAYzLK9wbYFTA7Wlz4?usp=sharing
