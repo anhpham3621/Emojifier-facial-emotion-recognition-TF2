@@ -44,7 +44,6 @@ pip install "pyqt5<5.16"  # Version constraint due to compatibility
 
 pip install numpy==1.24.4  
 
-# Ensure compatibility with source code, note there might be other versions that also fit
 **Explanation:**
 
 tensorflow-macos: Enables TensorFlow on macOS (supports CPU-based operations).
