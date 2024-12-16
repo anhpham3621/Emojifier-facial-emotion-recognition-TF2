@@ -1,44 +1,66 @@
-Forked from 
-https://github.com/vijuSR/facial_emotion_recognition__EMOJIFIER
+**Link to working Google Drive:**
+https://drive.google.com/drive/folders/1alpsE57XJWarzPfAYzLK9wbYFTA7Wlz4?usp=sharing (private)
 
-Note: 
+**Link to source code:**
+https://github.com/vijuSR/facial_emotion_recognition__EMOJIFIER (public)
 
--all dependencies in requirements.txt are not imported likely due to version incompatibility you should manually install using pip on MacOS pip will download the latest version
-
--edit config.ini to customize your local paths
-
--python 3.9 or 3.10 should work
-
--virtual environment recommended for your local machine
-
--Key Features of haarcascade_frontalface_default.xml: Purpose: It helps identify regions in an image that likely contain a human face. Implementation: The model uses Haar-like features, which are pre-defined patterns of intensity (light and dark regions), combined with machine learning for classification. Training: The classifier is trained using thousands of positive and negative images to detect faces effectively.
-
-
-# facial_emotion_recognition__EMOJIFIER
-Recognizes the facial emotion and overlays emoji, equivalent to the emotion, on the persons face.  
-
-## Some results First!  
+## Some results from the original Repo First! The output of this revised repo is very similar. 
 ![res](https://user-images.githubusercontent.com/20581741/46920875-34492e00-d012-11e8-81ac-fb9a69a40a57.gif)  
+## Setup Instructions
 
-## Getting Started
-1. ### Get the code:
-    - Using SSH: `git clone git@github.com:vijuSR/facial_emotion_recognition__EMOJIFIER.git`  
-    OR  
-    - Using HTTP: `git clone https://github.com/vijuSR/facial_emotion_recognition__EMOJIFIER.git`
+1. ### Create and activate a virtual environment (Recommended)
 
-1. ### Setup the Virtual Environment (Recommended):
-    - Create the virtual environment
+ - Create the virtual environment
         - `python3 -m venv </path/to/venv>`  
     - Activate your virtual-environment
         - Linux: `source </path/to/venv>/bin/activate`
         - Windows: `cd </path/to/venv>` then `.\Scripts\activate`  
-    - Install the requirements
-        - `cd <root-dir-of-project>`
-        - `pip install --upgrade -I -r requirements.txt`
-        > #### Install any missing requirement with `pip install <package-name>`  
-        #### That's all for the setup ! :smiley: 
 
-## Making it work for you:  
+2. ### Install Dependencies
+Instead of using the `requirements.txt` from the original repo, please install the following packages manually (to avoid version incompatibilities):
+
+`pip install --upgrade pip`
+
+`pip show opencv-python`  # If none, install it below
+
+`pip install opencv-python`
+
+`pip install tensorflow-macos` # if use MacOS
+
+`pip install tensorflow-metal` # if use MacOS
+
+`pip install tqdm`
+
+`pip install FuzzyTM`  # Required by other dependencies
+
+`pip install "pyqt5<5.16"`  # Version constraint due to compatibility
+
+`pip install numpy==1.24.4`
+
+Python version 3.9 or 3.10 works well as of December 15th, 2024
+
+**Explanation:**
+
+`tensorflow-macos`: Enables TensorFlow on macOS (supports CPU-based operations).
+
+`tensorflow-metal`: Provides GPU acceleration using Apple’s Metal API.
+
+`pyqt5<5.16` and `FuzzyTM`: Suggested during installation for resolving dependency issues.
+
+3. ### Get the code:
+    - Using SSH: `git@github.com:MHC-FA24-CS341CV/computer-vision-final-project-miriam-anh.git`  
+    OR  
+    - Using HTTP: `https://github.com/MHC-FA24-CS341CV/computer-vision-final-project-miriam-anh.git`
+    - 
+4. ### Configure Paths
+
+Run the following supporting script to get the path to the Haar Cascade file:
+
+`python3 get_haarcascade_path.py`
+
+Copy the displayed path and update it in `config.ini` under the `haarcascade_path` field.
+
+## Run Instructions: Making it work for you 
 
 There are 4 steps **from nothing** (not even a single image) **to getting the result as shown above**.  
 > #### And you don't need anything extra than this repo.  
@@ -71,9 +93,11 @@ There are 4 steps **from nothing** (not even a single image) **to getting the re
     
 - **STEP 4** - using the trained model to make prediction  
     1. run `python3 src/predictor.py`
+    - Tip: you can output the predictor results into a log file for convenience (instead of having the results printed in terminal which can get burdensome):
+      `python3 src/predictor.py > output.log 2>&1` 
     - this will open the cam, and start taking the video feed -- NOW YOU HAVE DONE IT ALL. :clap:  
     
 Its time to show your emotions :heart:
 
-> ### P.S. -- The model was trained on my facial images only, but was able to detect the expressions of my brother as well.  
+> ### P.S. -- This is the result from the original repo, with note from the author: "The model was trained on my facial images only, but was able to detect the expressions of my brother as well." 
 ![result](https://user-images.githubusercontent.com/20581741/46920764-a4ef4b00-d010-11e8-943e-79623139d073.gif)
