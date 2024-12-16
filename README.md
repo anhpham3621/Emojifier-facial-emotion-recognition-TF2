@@ -37,6 +37,8 @@ Instead of using the `requirements.txt` from the original repo, please install t
 
 `pip install numpy==1.24.4`
 
+Python version 3.9 or 3.10 works well as of December 15th, 2024
+
 **Explanation:**
 
 `tensorflow-macos`: Enables TensorFlow on macOS (supports CPU-based operations).
