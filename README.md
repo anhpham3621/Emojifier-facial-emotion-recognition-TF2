@@ -8,44 +8,34 @@ https://github.com/vijuSR/facial_emotion_recognition__EMOJIFIER
 ![res](https://user-images.githubusercontent.com/20581741/46920875-34492e00-d012-11e8-81ac-fb9a69a40a57.gif)  
 ## Setup Instructions
 
-**1. Create a Virtual Environment**
+1. ### Create and activate a virtual environment (Recommended)
 
-Create a virtual environment using the following command:
+ - Create the virtual environment
+        - `python3 -m venv </path/to/venv>`  
+    - Activate your virtual-environment
+        - Linux: `source </path/to/venv>/bin/activate`
+        - Windows: `cd </path/to/venv>` then `.\Scripts\activate`  
 
-python3 -m venv venv
+2. ### Install Dependencies
+Instead of using the `requirements.txt` from the original repo, please install the following packages manually (to avoid version incompatibilities):
 
-**2. Activate the Virtual Environment**
+`pip install --upgrade pip`
 
-**Linux/macOS:**
+`pip show opencv-python  # If none, install it below`
 
-source venv/bin/activate
+`pip install opencv-python`
 
-**Windows:**
+`pip install tensorflow-macos # if use MacOS`
 
-cd venv
+`pip install tensorflow-metal # if use MacOS`
 
-.\Scripts\activate
+`pip install tqdm`
 
-**3. Install Dependencies**
-Install the following packages manually (to avoid version incompatibilities):
+`pip install FuzzyTM  # Required by other dependencies`
 
-pip install --upgrade pip
+`pip install "pyqt5<5.16"  # Version constraint due to compatibility`
 
-pip show opencv-python  # If none, install it below
-
-pip install opencv-python
-
-pip install tensorflow-macos # if use MacOS
-
-pip install tensorflow-metal # if use MacOS
-
-pip install tqdm
-
-pip install FuzzyTM  # Required by other dependencies
-
-pip install "pyqt5<5.16"  # Version constraint due to compatibility
-
-pip install numpy==1.24.4  
+`pip install numpy==1.24.4`
 
 **Explanation:**
 
@@ -55,13 +45,13 @@ tensorflow-metal: Provides GPU acceleration using Apple’s Metal API.
 
 pyqt5<5.16 and FuzzyTM: Suggested during installation for resolving dependency issues.
 
-**4. Configure Paths**
+3. ### Configure Paths
 
 Run the following supporting script to get the path to the Haar Cascade file:
 
-python3 get_haarcascade_path.py
+`python3 get_haarcascade_path.py`
 
-Copy the displayed path and update it in config.ini under the haarcascade_path field.
+Copy the displayed path and update it in `config.ini` under the `haarcascade_path` field.
 
 ## Run Instructions: Making it work for you 
 
@@ -102,5 +92,5 @@ There are 4 steps **from nothing** (not even a single image) **to getting the re
     
 Its time to show your emotions :heart:
 
-> ### P.S. -- The model was trained on my facial images only, but was able to detect the expressions of my brother as well.  
+> ### P.S. -- This is the result from the original repo, with note from the author: The model was trained on my facial images only, but was able to detect the expressions of my brother as well.  
 ![result](https://user-images.githubusercontent.com/20581741/46920764-a4ef4b00-d010-11e8-943e-79623139d073.gif)
