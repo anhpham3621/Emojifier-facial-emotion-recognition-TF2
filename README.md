@@ -45,7 +45,12 @@ Instead of using the `requirements.txt` from the original repo, please install t
 
 `pyqt5<5.16` and `FuzzyTM`: Suggested during installation for resolving dependency issues.
 
-3. ### Configure Paths
+3. ### Get the code:
+    - Using SSH: `git@github.com:MHC-FA24-CS341CV/computer-vision-final-project-miriam-anh.git`  
+    OR  
+    - Using HTTP: `https://github.com/MHC-FA24-CS341CV/computer-vision-final-project-miriam-anh.git`
+    - 
+4. ### Configure Paths
 
 Run the following supporting script to get the path to the Haar Cascade file:
 
