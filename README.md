@@ -21,29 +21,29 @@ Instead of using the `requirements.txt` from the original repo, please install t
 
 `pip install --upgrade pip`
 
-`pip show opencv-python  # If none, install it below`
+`pip show opencv-python`  # If none, install it below
 
 `pip install opencv-python`
 
-`pip install tensorflow-macos # if use MacOS`
+`pip install tensorflow-macos` # if use MacOS
 
-`pip install tensorflow-metal # if use MacOS`
+`pip install tensorflow-metal` # if use MacOS
 
 `pip install tqdm`
 
-`pip install FuzzyTM  # Required by other dependencies`
+`pip install FuzzyTM`  # Required by other dependencies
 
-`pip install "pyqt5<5.16"  # Version constraint due to compatibility`
+`pip install "pyqt5<5.16"`  # Version constraint due to compatibility
 
 `pip install numpy==1.24.4`
 
 **Explanation:**
 
-tensorflow-macos: Enables TensorFlow on macOS (supports CPU-based operations).
+`tensorflow-macos`: Enables TensorFlow on macOS (supports CPU-based operations).
 
-tensorflow-metal: Provides GPU acceleration using Apple’s Metal API.
+`tensorflow-metal`: Provides GPU acceleration using Apple’s Metal API.
 
-pyqt5<5.16 and FuzzyTM: Suggested during installation for resolving dependency issues.
+`pyqt5<5.16` and `FuzzyTM`: Suggested during installation for resolving dependency issues.
 
 3. ### Configure Paths
 
@@ -92,5 +92,5 @@ There are 4 steps **from nothing** (not even a single image) **to getting the re
     
 Its time to show your emotions :heart:
 
-> ### P.S. -- This is the result from the original repo, with note from the author: The model was trained on my facial images only, but was able to detect the expressions of my brother as well.  
+> ### P.S. -- This is the result from the original repo, with note from the author: "The model was trained on my facial images only, but was able to detect the expressions of my brother as well." 
 ![result](https://user-images.githubusercontent.com/20581741/46920764-a4ef4b00-d010-11e8-943e-79623139d073.gif)
