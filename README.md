@@ -4,6 +4,9 @@ https://drive.google.com/drive/folders/1alpsE57XJWarzPfAYzLK9wbYFTA7Wlz4?usp=sha
 **Link to source code:**
 https://github.com/vijuSR/facial_emotion_recognition__EMOJIFIER
 
+## Some results from the original Repo First! The output of this revised repo is very similar. 
+![res](https://user-images.githubusercontent.com/20581741/46920875-34492e00-d012-11e8-81ac-fb9a69a40a57.gif)  
+
 **Setup Instructions**
 **1. Create a Virtual Environment**
 
