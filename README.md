@@ -51,7 +51,7 @@ Python version 3.9 or 3.10 works well as of December 15th, 2024
     - Using SSH: `git@github.com:MHC-FA24-CS341CV/computer-vision-final-project-miriam-anh.git`  
     OR  
     - Using HTTP: `https://github.com/MHC-FA24-CS341CV/computer-vision-final-project-miriam-anh.git`
-    - 
+
 4. ### Configure Paths
 
 Run the following supporting script to get the path to the Haar Cascade file:
