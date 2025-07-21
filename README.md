@@ -4,7 +4,7 @@ https://drive.google.com/drive/folders/1alpsE57XJWarzPfAYzLK9wbYFTA7Wlz4?usp=sha
 **Link to source code:**
 https://github.com/vijuSR/facial_emotion_recognition__EMOJIFIER (public)
 
-**Revise repo:**
+**Revised repo:**
 Majority of changes are found in this dir: modern_tensorflow2_EMOJIFIER
 
 ## Some results from the original Repo First! The output of this revised repo is very similar. 
