@@ -1,0 +1,24 @@
+# Ignore virtual environment
+venv/
+
+# Ignore Python bytecode
+__pycache__/
+*.pyc
+*.pyo
+
+# Ignore the images folder (if you don't want to track its contents)
+images/
+
+# Ignore logs or temporary files
+*.log
+*.tmp
+
+# Ignore Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Ignore macOS system files
+.DS_Store
+
+# Ignore other hidden files
+.idea/
+.vscode/

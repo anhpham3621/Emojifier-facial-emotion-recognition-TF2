@@ -1,0 +1,12 @@
+{ 
+    "smile": 0, 
+    "kiss": 1, 
+    "tease": 2, 
+    "angry": 3, 
+    "glass": 4,
+    "lol": 5,
+    "judging": 6,
+    "shocked": 7,
+    "yummy": 8,
+    "normal" : 9
+}

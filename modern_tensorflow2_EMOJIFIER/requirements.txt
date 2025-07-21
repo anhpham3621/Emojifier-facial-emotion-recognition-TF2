@@ -1,0 +1,6 @@
+#This file is from the original source code and is outdated, please do not use without your own modifications.
+tqdm==4.26.0
+numpy==1.14.2
+tensorflow_gpu==1.4.0
+opencv_python==3.4.0.12
+tensorflow==1.12.0
